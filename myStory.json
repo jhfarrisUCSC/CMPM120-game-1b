@@ -1,9 +1,10 @@
 {
-    "Title": "The Abandoned Jailhouse",
+    "Title": "The Old Jail House",
     "Credits": "Created by Jack Farris (jhfarris@ucsc.edu).",
     "InitialLocation": "Intro",
+    "Correct Combo": "1453",
     "Locations": {
-        "Intro": {
+         "Intro": {
             "Body": "There were many rumors about the old abandoned jail house. It wasn't something you cared about. Stuff like the place being haunted or holding a secret treasure. What did bring you over to the shabby shack was losing a bet and having to explore it. On the bright side if you find something cool, Kyle said he'd offer cash for it. It was the middle of the day and you had your friends across the road in case you needed to scream for help. The place wasn't even locked.",
             "Choices": [
                 {
@@ -26,10 +27,11 @@
                 {
                     "Text": "Check the storage room",
                     "Target": "Storage"
-                },
+                }
+                ,
                 {
-                    "Text": "Return to your friends",
-                    "Target": "Outside"
+                    "Text": "Return to friends",
+                    "Target": "Ending"
                 }
             ]
         },
@@ -47,17 +49,17 @@
             ]
         },
         "Treasure": {
-            "Body": "You found... A baseball card pack?",
+            "Body": "You found... A baseball card pack? Okay.",
             "Choices": [
                 {
-                    "Text": "Okay",
+                    "Text": "Leave",
                     "Target": "Office"
                 }
             ]
         },
         "Prison": {
             "Body": "There were three cells side by side. The far two were wide open while the one closest to the hallway was closed shut and had chains on it (not ominous whatsoever). However, the closed cell was the only one with a cabinet...",
-            "Choices": [ 
+            "Choices": [
                 {
                     "Text": "Check the furthest cell",
                     "Target": "Cell 1"
@@ -77,7 +79,7 @@
             "Choices": [
                 {
                     "Text": "Check the bed",
-                    "Target": "treasureKey"
+                    "Target": "Treasure Key"
                 },
                 {
                     "Text": "Check the toilet",
@@ -107,16 +109,16 @@
                 }
             ]
         },
-      "Cell 2": {
+        "Cell 2": {
             "Body": "A cold and dusty prison cell. Looks like the lock's busted so no fear accidently locking yourself in. Just a wooden board bed but a surprisingly well maintained toilet.",
             "Choices": [
                 {
                     "Text": "Check the bed",
-                    "Target": "Cell 2 Bed"
+                    "Target": "Wood"
                 },
                 {
                     "Text": "Check the toilet",
-                    "Target": "Digits"
+                    "Target": "Combination Reveal"
                 },
                 {
                     "Text": "Leave",
@@ -124,8 +126,8 @@
                 }
             ]
         },
-        "Cell 2 Bed": {
-            "Body": "Wood",
+        "Wood": {
+            "Body": "Wood.",
             "Choices": [
                 {
                     "Text": "Leave",
@@ -133,8 +135,8 @@
                 }
             ]
         },
-        "Digits": {
-            "Body": "There's some numbers carved behind the toilet. '1-4-5-3'",
+        "Combination Reveal": {
+            "Body": "There's some numbers carved behind the toilet. '1-4-5-3'.",
             "Choices": [
                 {
                     "Text": "Leave",
@@ -155,7 +157,7 @@
                 },
                 {
                     "Text": "Check the cabinet",
-                    "Target": "Office Key"
+                    "Target": "Cabinet"
                 },
                 {
                     "Text": "Leave",
@@ -181,7 +183,7 @@
                 }
             ]
         },
-        "Office Key": {
+        "Cabinet": {
             "Body": "You found a large key in the cabinent.",
             "Choices": [
                 {
@@ -199,7 +201,7 @@
                 },
                 {
                     "Text": "Check the boxes",
-                    "Target": "Boxes"
+                    "Target": "Cat"
                 },
                 {
                     "Text": "Leave",
@@ -207,7 +209,7 @@
                 }
             ]
         },
-        "Boxes": {
+        "Cat": {
             "Body": "Nice box, maybe your cat would like it... If it wasn't rotting, of course.",
             "Choices": [
                 {
@@ -265,13 +267,14 @@
                 }
             ]
         },
-        "Boxes": {
-            "Body": "NAs you leave the old building with your newly found reward, your friend great you and ask about what it was like. You proudly show of your finds and give it to your friend Kyle for $20, blissfully unaware that the cards inside were worth more.",
+        "Outside": {
+            "Body": "As you step outside with your new bounty, you see your friends calling out to you. They ask you how it was and you show them the sweet cards you managed to grab. Kyle gave you $20 for it and you happily go hope without the knowledge that the cards inside were worth more.",
             "Choices": [
                 {
-                    "Text": "The end",
+                    "Text": "The end"
                 }
             ]
         }
     }
 }
+
