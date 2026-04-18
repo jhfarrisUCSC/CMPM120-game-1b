@@ -79,47 +79,126 @@
                     "Target": "treasureKey"
                 },
                 {
-                    "Text": "Leave",
-                    "Target": "Lobby"
-                }
-            ]
-        },
-        "Treasure": {
-            "Body": "You found... A baseball card pack?",
-            "Choices": [
-                {
-                    "Text": "Okay",
-                    "Target": "Office"
-                }
-            ]
-        },
-        "Lobby": {
-            "Body": "This place was... Strangely more well-kept than you thought. At least the inside was well-kept, the outside made it look like the place you'd avoid if you were in a horror movie. The natural light made it bright enough to see the rotting furniature and dust coating every surface. It looked like the main Office had a big lock on it.",
-            "Choices": [
-                {
-                    "Text": "Check the office",
-                    "Target": "Office"
+                    "Text": "Check the toilet",
+                    "Target": "Cell 1 Toilet"
                 },
                 {
-                    "Text": "Check the cells",
+                    "Text": "Leave",
                     "Target": "Prison"
-                },
-                {
-                    "Text": "Check the storage room",
-                    "Target": "Storage"
-                },
-                {
-                    "Text": "Return to your friends",
-                    "Target": "Outside"
                 }
             ]
         },
-        "Office": {
-            "Body": "The most empty room in this place... There's only a desk. Paired with the rotting wallpaper and closed blinds, this would be the ample time to get jumpscared or murdered by a serial killer.",
+        "Treasure Key": {
+            "Body": "You found a small key under the bed.",
             "Choices": [
                 {
-                    "Text": "Check the desk",
-                    "Target": "Treasure"
+                    "Text": "Leave",
+                    "Target": "Cell 1"
+                }
+            ]
+        },
+        "Cell 1 Toilet": {
+            "Body": "Oh absolutely not.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Cell 1"
+                }
+            ]
+        },
+      "Cell 2": {
+            "Body": "A cold and dusty prison cell. Looks like the lock's busted so no fear accidently locking yourself in. Just a wooden board bed but a surprisingly well maintained toilet.",
+            "Choices": [
+                {
+                    "Text": "Check the bed",
+                    "Target": "Cell 2 Bed"
+                },
+                {
+                    "Text": "Check the toilet",
+                    "Target": "Digits"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Prison"
+                }
+            ]
+        },
+        "Cell 2 Bed": {
+            "Body": "Wood",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Cell 2"
+                }
+            ]
+        },
+        "Digits": {
+            "Body": "There's some numbers carved behind the toilet. '1-4-5-3'",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Cell 2"
+                }
+            ]
+        },
+        "Cell 3": {
+            "Body": "The locked up cell... The only real thing of note is the cabinet in the corner. The toilet was broken and the board bed's chains were broken.",
+            "Choices": [
+                {
+                    "Text": "Check the bed",
+                    "Target": "Cell 3 Bed"
+                },
+                {
+                    "Text": "Check the toilet",
+                    "Target": "Cell 3 Toilet"
+                },
+                {
+                    "Text": "Check the cabinet",
+                    "Target": "Office Key"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Storage"
+                }
+            ]
+        },
+        "Cell 3 Bed": {
+            "Body": "You cannot rest here, there are broken stuff nearby.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Cell 3"
+                }
+            ]
+        },
+        "Cell 3 Toilet": {
+            "Body": "Cracked Porcelin.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Cell 3"
+                }
+            ]
+        },
+        "Office Key": {
+            "Body": "You found a large key in the cabinent.",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Cell 3"
+                }
+            ]
+        },
+        "Storage": {
+            "Body": "A large storage closet with shelves and boxes. Looks to be mostly empty, though.",
+            "Choices": [
+                {
+                    "Text": "Check the shelf",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "Check the boxes",
+                    "Target": "Boxes"
                 },
                 {
                     "Text": "Leave",
@@ -127,17 +206,71 @@
                 }
             ]
         },
-        "Treasure": {
-            "Body": "You found... A baseball card pack?",
+        "Boxes": {
+            "Body": "Nice box, maybe your cat would like it... If it wasn't rotting, of course.",
             "Choices": [
                 {
-                    "Text": "Okay",
-                    "Target": "Office"
+                    "Text": "Leave",
+                    "Target": "Storage"
                 }
             ]
-        }
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        },
+        "Passcode": {
+            "Body": "There is a hidden keypad behind one of the boxes on the shelf.",
+            "Choices": [
+                {
+                    "Text": "[1]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[2]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[3]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[4]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[5]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[6]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[7]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[8]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[9]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "[0]",
+                    "Target": "Passcode"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Storage"
+                }
+            ]
+        },
+        "Boxes": {
+            "Body": "NAs you leave the old building with your newly found reward, your friend great you and ask about what it was like. You proudly show of your finds and give it to your friend Kyle for $20, blissfully unaware that the cards inside were worth more.",
+            "Choices": [
+                {
+                    "Text": "The end",
+                }
+            ]
         }
     }
 }
