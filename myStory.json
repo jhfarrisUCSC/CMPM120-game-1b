@@ -57,6 +57,7 @@
         },
         "Prison": {
             "Body": "There were three cells side by side. The far two were wide open while the one closest to the hallway was closed shut and had chains on it (not ominous whatsoever). However, the closed cell was the only one with a cabinet...",
+            "Choices": [ 
                 {
                     "Text": "Check the furthest cell",
                     "Target": "Cell 1"
