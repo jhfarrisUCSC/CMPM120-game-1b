@@ -1,56 +1,141 @@
 {
     "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Credits": "Created by Jack Farris (jhfarris@ucsc.edu).",
+    "InitialLocation": "Intro",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Intro": {
+            "Body": "There were many rumors about the old abandoned jail house. It wasn't something you cared about. Stuff like the place being haunted or holding a secret treasure. What did bring you over to the shabby shack was losing a bet and having to explore it. On the bright side if you find something cool, Kyle said he'd offer cash for it. It was the middle of the day and you had your friends across the road in case you needed to scream for help. The place wasn't even locked.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Enter",
+                    "Target": "Lobby"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Lobby": {
+            "Body": "This place was... Strangely more well-kept than you thought. At least the inside was well-kept, the outside made it look like the place you'd avoid if you were in a horror movie. The natural light made it bright enough to see the rotting furniature and dust coating every surface. It looked like the main Office had a big lock on it.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Check the office",
+                    "Target": "Office"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
-                }
-            ]
-        },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Check the cells",
+                    "Target": "Prison"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
-                }
-            ]
-        },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Check the storage room",
+                    "Target": "Storage"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Return to your friends",
+                    "Target": "Outside"
                 }
             ]
         },
+        "Office": {
+            "Body": "The most empty room in this place... There's only a desk. Paired with the rotting wallpaper and closed blinds, this would be the ample time to get jumpscared or murdered by a serial killer.",
+            "Choices": [
+                {
+                    "Text": "Check the desk",
+                    "Target": "Treasure"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Lobby"
+                }
+            ]
+        },
+        "Treasure": {
+            "Body": "You found... A baseball card pack?",
+            "Choices": [
+                {
+                    "Text": "Okay",
+                    "Target": "Office"
+                }
+            ]
+        },
+        "Prison": {
+            "Body": "There were three cells side by side. The far two were wide open while the one closest to the hallway was closed shut and had chains on it (not ominous whatsoever). However, the closed cell was the only one with a cabinet...",
+                {
+                    "Text": "Check the furthest cell",
+                    "Target": "Cell 1"
+                },
+                {
+                    "Text": "Check the middle cell",
+                    "Target": "Cell 2"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Lobby"
+                }
+            ]
+        },
+        "Cell 1": {
+            "Body": "A dank and kinda smelly prison cell. Looks like the lock's busted so no fear accidently locking yourself in. There's also an actual mattress instead of a wooden board, though the toilet seen better days.",
+            "Choices": [
+                {
+                    "Text": "Check the bed",
+                    "Target": "treasureKey"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Lobby"
+                }
+            ]
+        },
+        "Treasure": {
+            "Body": "You found... A baseball card pack?",
+            "Choices": [
+                {
+                    "Text": "Okay",
+                    "Target": "Office"
+                }
+            ]
+        },
+        "Lobby": {
+            "Body": "This place was... Strangely more well-kept than you thought. At least the inside was well-kept, the outside made it look like the place you'd avoid if you were in a horror movie. The natural light made it bright enough to see the rotting furniature and dust coating every surface. It looked like the main Office had a big lock on it.",
+            "Choices": [
+                {
+                    "Text": "Check the office",
+                    "Target": "Office"
+                },
+                {
+                    "Text": "Check the cells",
+                    "Target": "Prison"
+                },
+                {
+                    "Text": "Check the storage room",
+                    "Target": "Storage"
+                },
+                {
+                    "Text": "Return to your friends",
+                    "Target": "Outside"
+                }
+            ]
+        },
+        "Office": {
+            "Body": "The most empty room in this place... There's only a desk. Paired with the rotting wallpaper and closed blinds, this would be the ample time to get jumpscared or murdered by a serial killer.",
+            "Choices": [
+                {
+                    "Text": "Check the desk",
+                    "Target": "Treasure"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Lobby"
+                }
+            ]
+        },
+        "Treasure": {
+            "Body": "You found... A baseball card pack?",
+            "Choices": [
+                {
+                    "Text": "Okay",
+                    "Target": "Office"
+                }
+            ]
+        }
         "Beyond": {
             "Body": "Grass, don't forget to check for ticks!"
         }
